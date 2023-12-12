@@ -1,9 +1,9 @@
-#include <sys/mman.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <unistd.h>
-#include <sys/wait.h>
+#include <sys/mman.h>  // Para mmap() y munmap()
+#include <unistd.h>    // Para fork()
+#include <sys/wait.h>  // Para wait()
+#include <stdlib.h>    // Para exit()
+#include <stdio.h>     // Para perror() y printf()
+#include <string.h>    // Para strcpy()
 
 #define SIZE 4096
 
