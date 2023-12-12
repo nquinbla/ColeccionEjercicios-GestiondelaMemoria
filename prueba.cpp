@@ -4,6 +4,8 @@
 
 #define SIZE 4096
 
+using namespace std;
+
 int main() {
     HANDLE hMapFile;
     char* pBuf;
@@ -18,7 +20,7 @@ int main() {
     );
 
     if (hMapFile == NULL) {
-        std::cerr << "Could not create file mapping object: " << GetLastError() << std::endl;
+        cerr << "Could not create file mapping object: " << GetLastError() << endl;
         return 1;
     }
 
@@ -31,7 +33,7 @@ int main() {
     );
 
     if (pBuf == NULL) {
-        std::cerr << "Could not map view of file: " << GetLastError() << std::endl;
+        cerr << "Could not map view of file: " << GetLastError() << endl;
         CloseHandle(hMapFile);
         return 1;
     }
@@ -42,6 +44,7 @@ int main() {
 
     UnmapViewOfFile(pBuf);
     CloseHandle(hMapFile);
+    
 
     return 0;
 }
