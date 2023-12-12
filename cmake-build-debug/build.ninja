@@ -73,6 +73,39 @@ build main.exe: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/main.cpp.o
   TARGET_IMPLIB = libmain.dll.a
   TARGET_PDB = main.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target prueba
+
+
+#############################################
+# Order-only phony target for prueba
+
+build cmake_object_order_depends_target_prueba: phony || CMakeFiles/prueba.dir
+
+build CMakeFiles/prueba.dir/prueba.cpp.obj: CXX_COMPILER__prueba_unscanned_Debug C$:/Users/nerea/OneDrive/Documentos/GitHub/ColeccionEjercicios-GestiondelaMemoria/prueba.cpp || cmake_object_order_depends_target_prueba
+  DEP_FILE = CMakeFiles\prueba.dir\prueba.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\prueba.dir
+  OBJECT_FILE_DIR = CMakeFiles\prueba.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target prueba
+
+
+#############################################
+# Link the executable prueba.exe
+
+build prueba.exe: CXX_EXECUTABLE_LINKER__prueba_Debug CMakeFiles/prueba.dir/prueba.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\prueba.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = prueba.exe
+  TARGET_IMPLIB = libprueba.dll.a
+  TARGET_PDB = prueba.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -101,6 +134,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build main: phony main.exe
 
+build prueba: phony prueba.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -109,7 +144,7 @@ build main: phony main.exe
 #############################################
 # Folder: C:/Users/nerea/OneDrive/Documentos/GitHub/ColeccionEjercicios-GestiondelaMemoria/cmake-build-debug
 
-build all: phony main.exe
+build all: phony main.exe prueba.exe
 
 # =============================================================================
 # Built-in targets

@@ -1,3 +1,4 @@
 C:/Users/nerea/OneDrive/Documentos/GitHub/ColeccionEjercicios-GestiondelaMemoria/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/nerea/OneDrive/Documentos/GitHub/ColeccionEjercicios-GestiondelaMemoria/cmake-build-debug/CMakeFiles/prueba.dir
 C:/Users/nerea/OneDrive/Documentos/GitHub/ColeccionEjercicios-GestiondelaMemoria/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/nerea/OneDrive/Documentos/GitHub/ColeccionEjercicios-GestiondelaMemoria/cmake-build-debug/CMakeFiles/rebuild_cache.dir
