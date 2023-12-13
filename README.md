@@ -1,6 +1,8 @@
 # ColeccionEjercicios-GestiondelaMemoria
 Colección de ejercicios para gestión de la memoria
 
+He puesto dos códigos distintos, el primero similar al que nos has proporcionado por el campus (main.cpp) , y el segundo para que funcionara en windows (prueba.cpp).
+
 Link: https://github.com/nquinbla/ColeccionEjercicios-GestiondelaMemoria.git
 
 ## INSTRUCCIONES
